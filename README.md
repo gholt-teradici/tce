@@ -1,6 +1,6 @@
 # README
 This folder contains general instructions.
-The sub folder contains the coding assignment and contains a `README.md` file with additional information about the task
+The sub folder contains the coding assignment with a `README.md` file containing additional information about the task
 
 ## Steps to work on the the project
 * Register your account on github.com if you don't have one, and sign in.
