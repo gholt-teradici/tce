@@ -1,0 +1,88 @@
+\hypertarget{class_word_extractor}{}\section{Word\+Extractor Class Reference}
+\label{class_word_extractor}\index{Word\+Extractor@{Word\+Extractor}}
+
+
+Class used to extract words from file that contains A\+S\+C\+II characters.  
+
+
+
+
+{\ttfamily \#include $<$Word\+Extractor.\+hpp$>$}
+
+
+
+Collaboration diagram for Word\+Extractor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{class_word_extractor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_word_extractor_ab25413856a41ffa0e47682107ba2d456}{Word\+Extractor}} (std\+::string file\+Name)
+\item 
+\mbox{\hyperlink{class_word_extractor_a20476de5cb146afd9bc318a629157a9c}{$\sim$\+Word\+Extractor}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_word_extractor_aae86b87d65bcfe432ec50c88fec4f464}{extract\+Next\+Word}} ()
+\begin{DoxyCompactList}\small\item\em Extracts the next word. Ignores punctuation (eg. it\textquotesingle{}s = its) If multiple words are concatenated together with a character like hyphen(-\/) or underscore(\+\_\+) it will count them as seperate words. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ifstream \mbox{\hyperlink{class_word_extractor_a819fb5e08b5349e0c5f4e97a2393bbb2}{fin}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class used to extract words from file that contains A\+S\+C\+II characters. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_word_extractor_ab25413856a41ffa0e47682107ba2d456}\label{class_word_extractor_ab25413856a41ffa0e47682107ba2d456}} 
+\index{Word\+Extractor@{Word\+Extractor}!Word\+Extractor@{Word\+Extractor}}
+\index{Word\+Extractor@{Word\+Extractor}!Word\+Extractor@{Word\+Extractor}}
+\subsubsection{\texorpdfstring{Word\+Extractor()}{WordExtractor()}}
+{\footnotesize\ttfamily Word\+Extractor\+::\+Word\+Extractor (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+Opens file for reading. 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & -\/ File to be read. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_word_extractor_a20476de5cb146afd9bc318a629157a9c}\label{class_word_extractor_a20476de5cb146afd9bc318a629157a9c}} 
+\index{Word\+Extractor@{Word\+Extractor}!````~Word\+Extractor@{$\sim$\+Word\+Extractor}}
+\index{````~Word\+Extractor@{$\sim$\+Word\+Extractor}!Word\+Extractor@{Word\+Extractor}}
+\subsubsection{\texorpdfstring{$\sim$\+Word\+Extractor()}{~WordExtractor()}}
+{\footnotesize\ttfamily Word\+Extractor\+::$\sim$\+Word\+Extractor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Closes file 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_word_extractor_aae86b87d65bcfe432ec50c88fec4f464}\label{class_word_extractor_aae86b87d65bcfe432ec50c88fec4f464}} 
+\index{Word\+Extractor@{Word\+Extractor}!extract\+Next\+Word@{extract\+Next\+Word}}
+\index{extract\+Next\+Word@{extract\+Next\+Word}!Word\+Extractor@{Word\+Extractor}}
+\subsubsection{\texorpdfstring{extract\+Next\+Word()}{extractNextWord()}}
+{\footnotesize\ttfamily std\+::string Word\+Extractor\+::extract\+Next\+Word (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Extracts the next word. Ignores punctuation (eg. it\textquotesingle{}s = its) If multiple words are concatenated together with a character like hyphen(-\/) or underscore(\+\_\+) it will count them as seperate words. 
+
+\begin{DoxyReturn}{Returns}
+Extracted word. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_word_extractor_a819fb5e08b5349e0c5f4e97a2393bbb2}\label{class_word_extractor_a819fb5e08b5349e0c5f4e97a2393bbb2}} 
+\index{Word\+Extractor@{Word\+Extractor}!fin@{fin}}
+\index{fin@{fin}!Word\+Extractor@{Word\+Extractor}}
+\subsubsection{\texorpdfstring{fin}{fin}}
+{\footnotesize\ttfamily std\+::ifstream Word\+Extractor\+::fin\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_word_extractor_8hpp}{Word\+Extractor.\+hpp}}\item 
+src/\mbox{\hyperlink{_word_extractor_8cpp}{Word\+Extractor.\+cpp}}\end{DoxyCompactItemize}

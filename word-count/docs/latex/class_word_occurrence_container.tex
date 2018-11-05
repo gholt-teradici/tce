@@ -1,0 +1,110 @@
+\hypertarget{class_word_occurrence_container}{}\section{Word\+Occurrence\+Container Class Reference}
+\label{class_word_occurrence_container}\index{Word\+Occurrence\+Container@{Word\+Occurrence\+Container}}
+
+
+Container used to keep counts of word occurrences.  
+
+
+
+
+{\ttfamily \#include $<$Word\+Occurrence\+Container.\+hpp$>$}
+
+
+
+Collaboration diagram for Word\+Occurrence\+Container\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{class_word_occurrence_container__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_word_occurrence_container_1_1_wordand_count}{Wordand\+Count}}
+\begin{DoxyCompactList}\small\item\em structure for word and count pair. Overloads $<$ operator to use S\+TL priority queue as a min heap rather than a max heap \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_word_occurrence_container_a777151c21ae2e8d60fbdecb000cd2f44}{Word\+Occurrence\+Container}} ()
+\item 
+\mbox{\hyperlink{class_word_occurrence_container_a96a671f07750218a9325a8cab89288ef}{$\sim$\+Word\+Occurrence\+Container}} ()
+\item 
+void \mbox{\hyperlink{class_word_occurrence_container_a3ea24956cdbd599593bd4c0256cf9d15}{insert}} (const std\+::string \&word)
+\begin{DoxyCompactList}\small\item\em Inserts a word into the \mbox{\hyperlink{class_word_occurrence_container}{Word\+Occurrence\+Container}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::pair$<$ std\+::string, int $>$ $>$ \mbox{\hyperlink{class_word_occurrence_container_a383cebef200a3e2c12dcf4015381023f}{get\+Top\+Occurrences}} (int n)
+\begin{DoxyCompactList}\small\item\em Gets the top n words that occur the most. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, int $>$ \mbox{\hyperlink{class_word_occurrence_container_afa4a7302483fae9b9b2025c97101a685}{m\+\_\+word\+To\+Count\+Map}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Container used to keep counts of word occurrences. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_word_occurrence_container_a777151c21ae2e8d60fbdecb000cd2f44}\label{class_word_occurrence_container_a777151c21ae2e8d60fbdecb000cd2f44}} 
+\index{Word\+Occurrence\+Container@{Word\+Occurrence\+Container}!Word\+Occurrence\+Container@{Word\+Occurrence\+Container}}
+\index{Word\+Occurrence\+Container@{Word\+Occurrence\+Container}!Word\+Occurrence\+Container@{Word\+Occurrence\+Container}}
+\subsubsection{\texorpdfstring{Word\+Occurrence\+Container()}{WordOccurrenceContainer()}}
+{\footnotesize\ttfamily Word\+Occurrence\+Container\+::\+Word\+Occurrence\+Container (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_occurrence_container_a96a671f07750218a9325a8cab89288ef}\label{class_word_occurrence_container_a96a671f07750218a9325a8cab89288ef}} 
+\index{Word\+Occurrence\+Container@{Word\+Occurrence\+Container}!````~Word\+Occurrence\+Container@{$\sim$\+Word\+Occurrence\+Container}}
+\index{````~Word\+Occurrence\+Container@{$\sim$\+Word\+Occurrence\+Container}!Word\+Occurrence\+Container@{Word\+Occurrence\+Container}}
+\subsubsection{\texorpdfstring{$\sim$\+Word\+Occurrence\+Container()}{~WordOccurrenceContainer()}}
+{\footnotesize\ttfamily Word\+Occurrence\+Container\+::$\sim$\+Word\+Occurrence\+Container (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_word_occurrence_container_a383cebef200a3e2c12dcf4015381023f}\label{class_word_occurrence_container_a383cebef200a3e2c12dcf4015381023f}} 
+\index{Word\+Occurrence\+Container@{Word\+Occurrence\+Container}!get\+Top\+Occurrences@{get\+Top\+Occurrences}}
+\index{get\+Top\+Occurrences@{get\+Top\+Occurrences}!Word\+Occurrence\+Container@{Word\+Occurrence\+Container}}
+\subsubsection{\texorpdfstring{get\+Top\+Occurrences()}{getTopOccurrences()}}
+{\footnotesize\ttfamily vector$<$ pair$<$ string, int $>$ $>$ Word\+Occurrence\+Container\+::get\+Top\+Occurrences (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Gets the top n words that occur the most. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & -\/ top n words that occur. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of pairs where first is the word and second is the count. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_word_occurrence_container_a3ea24956cdbd599593bd4c0256cf9d15}\label{class_word_occurrence_container_a3ea24956cdbd599593bd4c0256cf9d15}} 
+\index{Word\+Occurrence\+Container@{Word\+Occurrence\+Container}!insert@{insert}}
+\index{insert@{insert}!Word\+Occurrence\+Container@{Word\+Occurrence\+Container}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void Word\+Occurrence\+Container\+::insert (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{word }\end{DoxyParamCaption})}
+
+
+
+Inserts a word into the \mbox{\hyperlink{class_word_occurrence_container}{Word\+Occurrence\+Container}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em word} & -\/ The word that will be inserted. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_word_occurrence_container_afa4a7302483fae9b9b2025c97101a685}\label{class_word_occurrence_container_afa4a7302483fae9b9b2025c97101a685}} 
+\index{Word\+Occurrence\+Container@{Word\+Occurrence\+Container}!m\+\_\+word\+To\+Count\+Map@{m\+\_\+word\+To\+Count\+Map}}
+\index{m\+\_\+word\+To\+Count\+Map@{m\+\_\+word\+To\+Count\+Map}!Word\+Occurrence\+Container@{Word\+Occurrence\+Container}}
+\subsubsection{\texorpdfstring{m\+\_\+word\+To\+Count\+Map}{m\_wordToCountMap}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, int$>$ Word\+Occurrence\+Container\+::m\+\_\+word\+To\+Count\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+Hash\+Map that maps word to count 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_word_occurrence_container_8hpp}{Word\+Occurrence\+Container.\+hpp}}\item 
+src/\mbox{\hyperlink{_word_occurrence_container_8cpp}{Word\+Occurrence\+Container.\+cpp}}\end{DoxyCompactItemize}
