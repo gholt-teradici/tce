@@ -1,0 +1,110 @@
+\hypertarget{class_word_counter}{}\section{Word\+Counter Class Reference}
+\label{class_word_counter}\index{Word\+Counter@{Word\+Counter}}
+
+
+Given a file that contains A\+S\+C\+II, counts word occurrences. Can return top ten words that occur in the file.  
+
+
+
+
+{\ttfamily \#include $<$Word\+Counter.\+hpp$>$}
+
+
+
+Collaboration diagram for Word\+Counter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{class_word_counter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_word_counter_affea0f9dd574ac25eb447a161b4e9c22}{Word\+Counter}} (const std\+::string \&file\+Name)
+\item 
+\mbox{\hyperlink{class_word_counter_ad0703060b084d90e36bb7b506c7eff94}{$\sim$\+Word\+Counter}} ()
+\item 
+std\+::vector$<$ std\+::pair$<$ std\+::string, unsigned int $>$ $>$ \mbox{\hyperlink{class_word_counter_a0d81dc009206dbbdddfd0fc290252855}{get\+Top\+Ten\+Occurrences}} ()
+\item 
+void \mbox{\hyperlink{class_word_counter_a29d681756dec9d102141c6c8a136561d}{print\+Top\+Ten\+Occurrences}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_word_extractor}{Word\+Extractor}} $>$ \mbox{\hyperlink{class_word_counter_aefb9611fa991d6e0e7dccd64403150cb}{m\+\_\+word\+Extractor}}
+\item 
+\mbox{\hyperlink{class_word_occurrence_container}{Word\+Occurrence\+Container}} \mbox{\hyperlink{class_word_counter_a7f867e08264a28ccfc65972bc42e409b}{m\+\_\+word\+Container}}
+\item 
+std\+::vector$<$ std\+::pair$<$ std\+::string, unsigned int $>$ $>$ \mbox{\hyperlink{class_word_counter_ab38650b6b6b1e07168682573f7923d24}{m\+\_\+top\+Ten\+Cache}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Given a file that contains A\+S\+C\+II, counts word occurrences. Can return top ten words that occur in the file. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_word_counter_affea0f9dd574ac25eb447a161b4e9c22}\label{class_word_counter_affea0f9dd574ac25eb447a161b4e9c22}} 
+\index{Word\+Counter@{Word\+Counter}!Word\+Counter@{Word\+Counter}}
+\index{Word\+Counter@{Word\+Counter}!Word\+Counter@{Word\+Counter}}
+\subsubsection{\texorpdfstring{Word\+Counter()}{WordCounter()}}
+{\footnotesize\ttfamily Word\+Counter\+::\+Word\+Counter (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+Constructs a \mbox{\hyperlink{class_word_counter}{Word\+Counter}} 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & -\/ File to be read \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em throws} & std\+::invalid\+\_\+argument if file cannot be opened \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_word_counter_ad0703060b084d90e36bb7b506c7eff94}\label{class_word_counter_ad0703060b084d90e36bb7b506c7eff94}} 
+\index{Word\+Counter@{Word\+Counter}!````~Word\+Counter@{$\sim$\+Word\+Counter}}
+\index{````~Word\+Counter@{$\sim$\+Word\+Counter}!Word\+Counter@{Word\+Counter}}
+\subsubsection{\texorpdfstring{$\sim$\+Word\+Counter()}{~WordCounter()}}
+{\footnotesize\ttfamily Word\+Counter\+::$\sim$\+Word\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_word_counter_a0d81dc009206dbbdddfd0fc290252855}\label{class_word_counter_a0d81dc009206dbbdddfd0fc290252855}} 
+\index{Word\+Counter@{Word\+Counter}!get\+Top\+Ten\+Occurrences@{get\+Top\+Ten\+Occurrences}}
+\index{get\+Top\+Ten\+Occurrences@{get\+Top\+Ten\+Occurrences}!Word\+Counter@{Word\+Counter}}
+\subsubsection{\texorpdfstring{get\+Top\+Ten\+Occurrences()}{getTopTenOccurrences()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::pair$<$ std\+::string, unsigned int $>$ $>$ Word\+Counter\+::get\+Top\+Ten\+Occurrences (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counter_a29d681756dec9d102141c6c8a136561d}\label{class_word_counter_a29d681756dec9d102141c6c8a136561d}} 
+\index{Word\+Counter@{Word\+Counter}!print\+Top\+Ten\+Occurrences@{print\+Top\+Ten\+Occurrences}}
+\index{print\+Top\+Ten\+Occurrences@{print\+Top\+Ten\+Occurrences}!Word\+Counter@{Word\+Counter}}
+\subsubsection{\texorpdfstring{print\+Top\+Ten\+Occurrences()}{printTopTenOccurrences()}}
+{\footnotesize\ttfamily void Word\+Counter\+::print\+Top\+Ten\+Occurrences (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_word_counter_ab38650b6b6b1e07168682573f7923d24}\label{class_word_counter_ab38650b6b6b1e07168682573f7923d24}} 
+\index{Word\+Counter@{Word\+Counter}!m\+\_\+top\+Ten\+Cache@{m\+\_\+top\+Ten\+Cache}}
+\index{m\+\_\+top\+Ten\+Cache@{m\+\_\+top\+Ten\+Cache}!Word\+Counter@{Word\+Counter}}
+\subsubsection{\texorpdfstring{m\+\_\+top\+Ten\+Cache}{m\_topTenCache}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::pair$<$std\+::string, unsigned int$>$ $>$ Word\+Counter\+::m\+\_\+top\+Ten\+Cache\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_word_counter_a7f867e08264a28ccfc65972bc42e409b}\label{class_word_counter_a7f867e08264a28ccfc65972bc42e409b}} 
+\index{Word\+Counter@{Word\+Counter}!m\+\_\+word\+Container@{m\+\_\+word\+Container}}
+\index{m\+\_\+word\+Container@{m\+\_\+word\+Container}!Word\+Counter@{Word\+Counter}}
+\subsubsection{\texorpdfstring{m\+\_\+word\+Container}{m\_wordContainer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_word_occurrence_container}{Word\+Occurrence\+Container}} Word\+Counter\+::m\+\_\+word\+Container\hspace{0.3cm}{\ttfamily [private]}}
+
+Container used to keep track of occurrences of words \mbox{\Hypertarget{class_word_counter_aefb9611fa991d6e0e7dccd64403150cb}\label{class_word_counter_aefb9611fa991d6e0e7dccd64403150cb}} 
+\index{Word\+Counter@{Word\+Counter}!m\+\_\+word\+Extractor@{m\+\_\+word\+Extractor}}
+\index{m\+\_\+word\+Extractor@{m\+\_\+word\+Extractor}!Word\+Counter@{Word\+Counter}}
+\subsubsection{\texorpdfstring{m\+\_\+word\+Extractor}{m\_wordExtractor}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_word_extractor}{Word\+Extractor}}$>$ Word\+Counter\+::m\+\_\+word\+Extractor\hspace{0.3cm}{\ttfamily [private]}}
+
+object used to extract words from file 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_word_counter_8hpp}{Word\+Counter.\+hpp}}\item 
+src/\mbox{\hyperlink{_word_counter_8cpp}{Word\+Counter.\+cpp}}\end{DoxyCompactItemize}
