@@ -33,6 +33,9 @@ The google test framework was used https://github.com/google/googletest. No test
 Two larger test files are included with their corresponding expected results file which consists of the top 10 word counts. These were generated using http://www.writewords.org.uk/word_count.asp.
 In a case where this wasn't available, I would generate files using random words from a dictionary with random occurrences while storing the corresponding occurrences.
 
+## Documentation
+Doxygen was used to generate documentation. This was put into the repository for your convenience. 
+
 ## Algorithm 
 
  - File is read and words are extracted and processed (punctuation

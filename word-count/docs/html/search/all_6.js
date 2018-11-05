@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_3c',['operator&lt;',['../struct_word_occurrence_container_1_1_wordand_count.html#a6922cc342d2df02f2786a5f1e676c7c0',1,'WordOccurrenceContainer::WordandCount']]]
+  ['printtoptenoccurrences',['printTopTenOccurrences',['../class_word_counter.html#a29d681756dec9d102141c6c8a136561d',1,'WordCounter']]]
 ];

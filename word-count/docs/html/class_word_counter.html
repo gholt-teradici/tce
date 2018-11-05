@@ -89,8 +89,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:affea0f9dd574ac25eb447a161b4e9c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0703060b084d90e36bb7b506c7eff94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word_counter.html#ad0703060b084d90e36bb7b506c7eff94">~WordCounter</a> ()</td></tr>
 <tr class="separator:ad0703060b084d90e36bb7b506c7eff94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1c63e4767c0ac7d4c884f0ed78cac26"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; std::string, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word_counter.html#ab1c63e4767c0ac7d4c884f0ed78cac26">getTopTenOccurrences</a> ()</td></tr>
-<tr class="separator:ab1c63e4767c0ac7d4c884f0ed78cac26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d81dc009206dbbdddfd0fc290252855"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; std::string, unsigned int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word_counter.html#a0d81dc009206dbbdddfd0fc290252855">getTopTenOccurrences</a> ()</td></tr>
+<tr class="separator:a0d81dc009206dbbdddfd0fc290252855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29d681756dec9d102141c6c8a136561d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word_counter.html#a29d681756dec9d102141c6c8a136561d">printTopTenOccurrences</a> ()</td></tr>
 <tr class="separator:a29d681756dec9d102141c6c8a136561d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -100,8 +100,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aefb9611fa991d6e0e7dccd64403150cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f867e08264a28ccfc65972bc42e409b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_word_occurrence_container.html">WordOccurrenceContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word_counter.html#a7f867e08264a28ccfc65972bc42e409b">m_wordContainer</a></td></tr>
 <tr class="separator:a7f867e08264a28ccfc65972bc42e409b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2184e7a0cae1bdd7a94e638dac64ed0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; std::string, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word_counter.html#af2184e7a0cae1bdd7a94e638dac64ed0">m_topTenCache</a></td></tr>
-<tr class="separator:af2184e7a0cae1bdd7a94e638dac64ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab38650b6b6b1e07168682573f7923d24"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; std::string, unsigned int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word_counter.html#ab38650b6b6b1e07168682573f7923d24">m_topTenCache</a></td></tr>
+<tr class="separator:ab38650b6b6b1e07168682573f7923d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Given a file that contains ASCII, counts word occurrences. Can return top ten words that occur in the file. </p>
@@ -154,14 +154,14 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab1c63e4767c0ac7d4c884f0ed78cac26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1c63e4767c0ac7d4c884f0ed78cac26">&#9670;&nbsp;</a></span>getTopTenOccurrences()</h2>
+<a id="a0d81dc009206dbbdddfd0fc290252855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d81dc009206dbbdddfd0fc290252855">&#9670;&nbsp;</a></span>getTopTenOccurrences()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::pair&lt; std::string, int &gt; &gt; WordCounter::getTopTenOccurrences </td>
+          <td class="memname">std::vector&lt; std::pair&lt; std::string, unsigned int &gt; &gt; WordCounter::getTopTenOccurrences </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -189,8 +189,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="af2184e7a0cae1bdd7a94e638dac64ed0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2184e7a0cae1bdd7a94e638dac64ed0">&#9670;&nbsp;</a></span>m_topTenCache</h2>
+<a id="ab38650b6b6b1e07168682573f7923d24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab38650b6b6b1e07168682573f7923d24">&#9670;&nbsp;</a></span>m_topTenCache</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -199,7 +199,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::pair&lt;std::string, int&gt; &gt; WordCounter::m_topTenCache</td>
+          <td class="memname">std::vector&lt;std::pair&lt;std::string, unsigned int&gt; &gt; WordCounter::m_topTenCache</td>
         </tr>
       </table>
   </td>

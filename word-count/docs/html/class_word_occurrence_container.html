@@ -94,16 +94,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a96a671f07750218a9325a8cab89288ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word_occurrence_container.html#a96a671f07750218a9325a8cab89288ef">~WordOccurrenceContainer</a> ()</td></tr>
 <tr class="separator:a96a671f07750218a9325a8cab89288ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ea24956cdbd599593bd4c0256cf9d15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word_occurrence_container.html#a3ea24956cdbd599593bd4c0256cf9d15">insert</a> (const std::string &amp;word)</td></tr>
-<tr class="memdesc:a3ea24956cdbd599593bd4c0256cf9d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a word into the <a class="el" href="class_word_occurrence_container.html" title="Container used to keep counts of word occurrences. ">WordOccurrenceContainer</a>.  <a href="#a3ea24956cdbd599593bd4c0256cf9d15">More...</a><br /></td></tr>
+<tr class="memdesc:a3ea24956cdbd599593bd4c0256cf9d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a word into the <a class="el" href="class_word_occurrence_container.html" title="Container used to keep counts of word occurrences. ">WordOccurrenceContainer</a>. Assumes input string is a word and not empty.  <a href="#a3ea24956cdbd599593bd4c0256cf9d15">More...</a><br /></td></tr>
 <tr class="separator:a3ea24956cdbd599593bd4c0256cf9d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a383cebef200a3e2c12dcf4015381023f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; std::string, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word_occurrence_container.html#a383cebef200a3e2c12dcf4015381023f">getTopOccurrences</a> (int n)</td></tr>
-<tr class="memdesc:a383cebef200a3e2c12dcf4015381023f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the top n words that occur the most.  <a href="#a383cebef200a3e2c12dcf4015381023f">More...</a><br /></td></tr>
-<tr class="separator:a383cebef200a3e2c12dcf4015381023f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4402285c14c3d282aa34c62934260e1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; std::string, unsigned int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word_occurrence_container.html#aa4402285c14c3d282aa34c62934260e1">getTopOccurrences</a> (const unsigned int &amp;n)</td></tr>
+<tr class="memdesc:aa4402285c14c3d282aa34c62934260e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the top n words that occur the most.  <a href="#aa4402285c14c3d282aa34c62934260e1">More...</a><br /></td></tr>
+<tr class="separator:aa4402285c14c3d282aa34c62934260e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:afa4a7302483fae9b9b2025c97101a685"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word_occurrence_container.html#afa4a7302483fae9b9b2025c97101a685">m_wordToCountMap</a></td></tr>
-<tr class="separator:afa4a7302483fae9b9b2025c97101a685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f0abb68fe94056659c7a1e0f919ae2"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word_occurrence_container.html#ab2f0abb68fe94056659c7a1e0f919ae2">m_wordToCountMap</a></td></tr>
+<tr class="separator:ab2f0abb68fe94056659c7a1e0f919ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Container used to keep counts of word occurrences. </p>
@@ -143,16 +143,16 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a383cebef200a3e2c12dcf4015381023f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a383cebef200a3e2c12dcf4015381023f">&#9670;&nbsp;</a></span>getTopOccurrences()</h2>
+<a id="aa4402285c14c3d282aa34c62934260e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4402285c14c3d282aa34c62934260e1">&#9670;&nbsp;</a></span>getTopOccurrences()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt; pair&lt; string, int &gt; &gt; WordOccurrenceContainer::getTopOccurrences </td>
+          <td class="memname">vector&lt; pair&lt; string, unsigned int &gt; &gt; WordOccurrenceContainer::getTopOccurrences </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const unsigned int &amp;&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
@@ -186,7 +186,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Inserts a word into the <a class="el" href="class_word_occurrence_container.html" title="Container used to keep counts of word occurrences. ">WordOccurrenceContainer</a>. </p>
+<p>Inserts a word into the <a class="el" href="class_word_occurrence_container.html" title="Container used to keep counts of word occurrences. ">WordOccurrenceContainer</a>. Assumes input string is a word and not empty. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">word</td><td>- The word that will be inserted. </td></tr>
@@ -197,8 +197,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="afa4a7302483fae9b9b2025c97101a685"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa4a7302483fae9b9b2025c97101a685">&#9670;&nbsp;</a></span>m_wordToCountMap</h2>
+<a id="ab2f0abb68fe94056659c7a1e0f919ae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2f0abb68fe94056659c7a1e0f919ae2">&#9670;&nbsp;</a></span>m_wordToCountMap</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,7 +207,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unordered_map&lt;std::string, int&gt; WordOccurrenceContainer::m_wordToCountMap</td>
+          <td class="memname">std::unordered_map&lt;std::string, unsigned int&gt; WordOccurrenceContainer::m_wordToCountMap</td>
         </tr>
       </table>
   </td>

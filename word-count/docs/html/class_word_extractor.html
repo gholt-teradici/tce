@@ -78,12 +78,14 @@ $(function() {
 Collaboration diagram for WordExtractor:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_word_extractor__coll__graph.png" border="0" usemap="#_word_extractor_coll__map" alt="Collaboration graph"/></div>
+<map name="_word_extractor_coll__map" id="_word_extractor_coll__map">
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab25413856a41ffa0e47682107ba2d456"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word_extractor.html#ab25413856a41ffa0e47682107ba2d456">WordExtractor</a> (std::string fileName)</td></tr>
-<tr class="separator:ab25413856a41ffa0e47682107ba2d456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad49ed8d220bc9cd36f3b0a285d52a081"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word_extractor.html#ad49ed8d220bc9cd36f3b0a285d52a081">WordExtractor</a> (const std::string &amp;fileName)</td></tr>
+<tr class="separator:ad49ed8d220bc9cd36f3b0a285d52a081"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20476de5cb146afd9bc318a629157a9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word_extractor.html#a20476de5cb146afd9bc318a629157a9c">~WordExtractor</a> ()</td></tr>
 <tr class="separator:a20476de5cb146afd9bc318a629157a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae86b87d65bcfe432ec50c88fec4f464"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word_extractor.html#aae86b87d65bcfe432ec50c88fec4f464">extractNextWord</a> ()</td></tr>
@@ -92,14 +94,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a819fb5e08b5349e0c5f4e97a2393bbb2"><td class="memItemLeft" align="right" valign="top">std::ifstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word_extractor.html#a819fb5e08b5349e0c5f4e97a2393bbb2">fin</a></td></tr>
-<tr class="separator:a819fb5e08b5349e0c5f4e97a2393bbb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af189c1c3a30c9e06d5bda3ac358d0963"><td class="memItemLeft" align="right" valign="top">std::ifstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word_extractor.html#af189c1c3a30c9e06d5bda3ac358d0963">m_fin</a></td></tr>
+<tr class="separator:af189c1c3a30c9e06d5bda3ac358d0963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class used to extract words from file that contains ASCII characters. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab25413856a41ffa0e47682107ba2d456"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab25413856a41ffa0e47682107ba2d456">&#9670;&nbsp;</a></span>WordExtractor()</h2>
+<a id="ad49ed8d220bc9cd36f3b0a285d52a081"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad49ed8d220bc9cd36f3b0a285d52a081">&#9670;&nbsp;</a></span>WordExtractor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -107,7 +109,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">WordExtractor::WordExtractor </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>fileName</em></td><td>)</td>
           <td></td>
         </tr>
@@ -162,8 +164,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a819fb5e08b5349e0c5f4e97a2393bbb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a819fb5e08b5349e0c5f4e97a2393bbb2">&#9670;&nbsp;</a></span>fin</h2>
+<a id="af189c1c3a30c9e06d5bda3ac358d0963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af189c1c3a30c9e06d5bda3ac358d0963">&#9670;&nbsp;</a></span>m_fin</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -172,7 +174,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::ifstream WordExtractor::fin</td>
+          <td class="memname">std::ifstream WordExtractor::m_fin</td>
         </tr>
       </table>
   </td>
