@@ -32,7 +32,7 @@ public:
      * @param n - top n words that occur.
      * @return Vector of pairs where first is the word and second is the count.
      */
-    std::vector <std::pair<std::string, int>> getTopOccurrences(int n);
+    std::vector <std::pair<std::string, unsigned int>> getTopOccurrences(const unsigned int& n);
 
 private:
     /**
@@ -41,7 +41,7 @@ private:
      */
     struct WordandCount{
         std::string word;
-        int count;
+        unsigned int count;
 
         bool operator<(const WordandCount& rhs) const
         {
@@ -49,7 +49,7 @@ private:
         }
     };
     /** HashMap that maps word to count*/
-    std::unordered_map<std::string, int> m_wordToCountMap;
+    std::unordered_map<std::string, unsigned int> m_wordToCountMap;
 };
 
 

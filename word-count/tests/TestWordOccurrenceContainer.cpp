@@ -13,7 +13,7 @@ TEST (TestWordOccurrenceContainer, Smoke){
     data.insert("word");
     data.insert("word");
     data.insert("nottop");
-    std::vector<std::pair<std::string, int>> v = data.getTopOccurrences(NUM_OF_TOP);
+    std::vector<std::pair<std::string, unsigned int>> v = data.getTopOccurrences(NUM_OF_TOP);
 
     ASSERT_EQ(v.size(), NUM_OF_TOP);
     ASSERT_EQ(v[0].first, "word");
@@ -32,7 +32,7 @@ TEST (TestWordOccurrenceContainer, MultipleWords){
     for(int i = 0 ; i < 4; i++)
         data.insert("four");
 
-    std::vector<std::pair<std::string, int>> v = data.getTopOccurrences(NUM_OF_TOP);
+    std::vector<std::pair<std::string, unsigned int>> v = data.getTopOccurrences(NUM_OF_TOP);
 
     ASSERT_EQ(v.size(), NUM_OF_TOP);
 
@@ -56,7 +56,7 @@ TEST (TestWordOccurrenceContainer, NumTopOccurencesGreaterThanNumWords){
     for(int i = 0 ; i < 4; i++)
         data.insert("four");
 
-    std::vector<std::pair<std::string, int>> v = data.getTopOccurrences(NUM_OF_TOP);
+    std::vector<std::pair<std::string, unsigned int>> v = data.getTopOccurrences(NUM_OF_TOP);
 
     ASSERT_EQ(v.size(), 2);
 

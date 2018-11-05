@@ -13,7 +13,7 @@ WordCounter::WordCounter(const std::string &fileName) {
 
 WordCounter::~WordCounter() {}
 
-std::vector<std::pair<std::string, int>> WordCounter::getTopTenOccurrences() {
+std::vector<std::pair<std::string, unsigned int>> WordCounter::getTopTenOccurrences() {
     string word;
     word = m_wordExtractor->extractNextWord();
     while (!word.empty()){

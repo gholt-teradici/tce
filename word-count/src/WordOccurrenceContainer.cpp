@@ -11,7 +11,7 @@ using namespace std;
 WordOccurrenceContainer::WordOccurrenceContainer() {}
 WordOccurrenceContainer::~WordOccurrenceContainer() {}
 
-void WordOccurrenceContainer::insert(const string &word) {
+void WordOccurrenceContainer::insert(const string& word) {
     auto map_itr = m_wordToCountMap.find(word);
     // if word doesn't exist in map
     if (map_itr == m_wordToCountMap.end()) {
@@ -25,7 +25,7 @@ void WordOccurrenceContainer::insert(const string &word) {
 
 }
 
-vector<pair<string, int>> WordOccurrenceContainer::getTopOccurrences(int heapSize) {
+vector<pair<string, unsigned int>> WordOccurrenceContainer::getTopOccurrences(const unsigned int& heapSize) {
 
     WordandCount data;
     priority_queue<WordandCount> minHeap;
@@ -49,13 +49,13 @@ vector<pair<string, int>> WordOccurrenceContainer::getTopOccurrences(int heapSiz
     }
 
     // return vector with top n words in descending order
-    stack<pair<string, int>> s;
+    stack<pair<string, unsigned int>> s;
     while (!minHeap.empty()){
         data = minHeap.top();
         s.push(make_pair(data.word, data.count));
         minHeap.pop();
     }
-    vector<pair<string,int>> v;
+    vector<pair<string, unsigned int>> v;
     while (!s.empty()){
         v.emplace_back(s.top());
         s.pop();

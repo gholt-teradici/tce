@@ -14,8 +14,8 @@
 using namespace std;
 
 // Assumes test file is formatted properly.
-vector<pair<string, int>> getTestFileAnswer(string fileName){
-    vector<pair<string, int>> v;
+vector<pair<string, unsigned int>> getTestFileAnswer(string fileName){
+    vector<pair<string, unsigned int>> v;
     ifstream fin(fileName);
     if(!fin){
         cout << "Failed to open test file answers: " << fileName << endl;
@@ -34,7 +34,7 @@ vector<pair<string, int>> getTestFileAnswer(string fileName){
 inline void testFile(const string& file, const string& fileAnswer){
     WordCounter wordCounter(file);
 
-    vector<pair<string, int>> wordCountResult, wordCountExpected;
+    vector<pair<string, unsigned int>> wordCountResult, wordCountExpected;
     wordCountResult = wordCounter.getTopTenOccurrences();
 
     wordCountExpected = getTestFileAnswer(fileAnswer);

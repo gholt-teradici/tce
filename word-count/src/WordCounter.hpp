@@ -24,7 +24,7 @@ public:
     WordCounter(const std::string& fileName);
     ~WordCounter();
 
-    std::vector<std::pair<std::string, int>> getTopTenOccurrences();
+    std::vector<std::pair<std::string, unsigned int>> getTopTenOccurrences();
     void printTopTenOccurrences();
 
 private:
@@ -35,7 +35,7 @@ private:
     WordOccurrenceContainer m_wordContainer;
 
     /** */
-    std::vector<std::pair<std::string, int>> m_topTenCache;
+    std::vector<std::pair<std::string, unsigned int>> m_topTenCache;
 
 };
 

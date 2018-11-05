@@ -6,9 +6,9 @@
 #include "WordExtractor.hpp"
 
 
-WordExtractor::WordExtractor(std::string fileName) {
-    fin.open(fileName);
-    if (!fin){
+WordExtractor::WordExtractor(const std::string& fileName) {
+    m_fin.open(fileName);
+    if (!m_fin){
         std::string err = "Error opening file: ";
         err = err + fileName + '\n';
         std::cerr << err;
@@ -17,16 +17,16 @@ WordExtractor::WordExtractor(std::string fileName) {
 }
 
 WordExtractor::~WordExtractor() {
-    if (fin.is_open()){
-        fin.close();
+    if (m_fin.is_open()){
+        m_fin.close();
     }
 }
 
 std::string WordExtractor::extractNextWord() {
     char c;
     std::string word;
-    while (fin.peek() != std::char_traits<char>::eof()){
-        fin.get(c);
+    while (m_fin.peek() != std::char_traits<char>::eof()){
+        m_fin.get(c);
         c = (char)tolower(c);
         if ((c >= 'a' && c <= 'z') || c == '\'') {
             if(c != '\''){  // ignore ' in words (eg. it's = its)

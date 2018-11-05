@@ -18,7 +18,7 @@ public:
      * Opens file for reading.
      * @param fileName - File to be read.
      */
-    WordExtractor(std::string fileName);
+    WordExtractor(const std::string& fileName);
     /**
      * Closes file
      */
@@ -34,7 +34,7 @@ public:
 
 private:
 
-    std::ifstream fin;
+    std::ifstream m_fin;
 };
 
 
