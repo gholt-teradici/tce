@@ -22,7 +22,8 @@ public:
     ~WordOccurrenceContainer();
 
     /**
-     * @brief Inserts a word into the WordOccurrenceContainer
+     * @brief Inserts a word into the WordOccurrenceContainer.
+     * Assumes input string is a word and not empty.
      * @param word - The word that will be inserted.
      */
     void insert(const std::string& word);
